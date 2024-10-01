@@ -1,0 +1,221 @@
+@font-face {
+    font-family: 'ArcadeLunar';
+    src: url(../URWDIN-Bold.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {        
+
+    font-family: 'ArcadeLunar';
+    background: linear-gradient(10deg, black, purple);
+    height: 100vh;
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.548);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 8vh;
+}
+
+.logo {
+    height: 50px;
+    width: 90px;
+    filter: opacity(0.5);
+    transition: 0.3s;
+}
+
+.logo:hover {
+    filter: opacity(1);
+}
+
+nav {
+    padding-right: 25px;
+}
+
+ul {
+    padding-right: 25px;
+    display: flex;
+    gap: 50px;
+    
+}
+
+li {
+    list-style: none;
+    color: #fff;
+    transition: 0.3s linear;
+}
+
+li:hover {
+    color: rgb(177, 88, 250);
+    cursor: pointer;
+}
+
+section {
+    height: 600px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.432);
+}
+
+section > h1 {
+    font-size: 30pt;
+    color: white;
+}
+
+.countdown {
+    font-size: 2rem;
+    margin-top: 20px;
+    color: #c300ff;
+    margin-bottom: 50px;
+}
+
+span {
+    color: rgba(255, 255, 255, 0.342);
+}
+
+input[type=button] {
+    width: 220px;
+    padding: 10px;
+    background-color: #c300ff;
+    color: white;
+    border: none;
+    font-family: 'ArcadeLunar';
+    font-size: 16pt;
+    border-radius: 10px;
+    opacity: 0.3;
+    animation: btn 2s linear;
+    transition: 0.3s;
+}
+
+input[type=button]:hover {
+    cursor: no-drop;
+}
+
+
+@keyframes btn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0.3;
+    }
+}
+
+.loading {
+    font-size: 2rem;
+    margin-top: 20px;
+    color: #c300ff;;
+    text-align: center;
+}
+
+.download {
+    display: none;
+}
+
+
+footer {
+    background-color: black;
+    height: 111px;
+    text-align: center;
+
+}
+
+footer > p {
+    color: #cfcfcf;
+    margin-bottom: 8px;
+}
+
+
+@media screen and (width < 500px) {
+
+    section > h1 {
+    font-size: 16pt;
+    color: white;
+}
+
+input[type=button] {
+    width: 190px;
+    padding: 10px;
+    background-color: #c300ff;
+    color: white;
+    border: none;
+    font-family: 'ArcadeLunar';
+    font-size: 16pt;
+    border-radius: 10px;
+    opacity: 0.3;
+    animation: btn 2s linear;
+    transition: 0.3s;
+}
+
+
+.loading {
+    font-size: 1rem;
+    margin-top: 20px;
+    color: #c300ff;;
+    text-align: center;
+}
+
+.countdown {
+    font-size: 1rem;
+    margin-top: 20px;
+    color: #c300ff;
+    margin-bottom: 50px;
+}
+
+
+
+
+}
+
+
+
+
+.footer-socials {
+flex: 1;
+margin: 20px;
+}
+
+.socials {
+display: flex;
+justify-content: center;
+gap: 15px;
+}
+
+i {
+color: #c300ff;
+}
+
+.infos {
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 5px;
+}
+
+.socials a {
+color: #fff;
+text-decoration: none;
+transition: color 0.3s;
+}
+
+.socials a:hover {
+color: #fff;
+}
+
+.footer-bottom {
+margin-top: 20px;
+font-size: 0.9rem;
+color: #bbb;
+}
